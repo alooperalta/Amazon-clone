@@ -3,8 +3,13 @@ import Image from 'next/image'
 import { StarIcon } from '@heroicons/react/solid'
 import Currency from 'react-currency-formatter'
 
+const MAX_RATING = 5;
+const MIN_RATING = 1;
+
 function Product({title, id, price, description, category, image}) {
-    const [rating] = useState(2);
+    const [rating] = useState(
+        Math.floor(Math.random()* (MAX_RATING - MIN_RATING + 1)) + MIN_RATING
+    );
     const [hasPrime] = useState(Math.random()<0.5)
     return (
         <div className='relative flex flex-col m-5 bg-white z-30 p-10'>

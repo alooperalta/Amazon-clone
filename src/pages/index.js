@@ -13,7 +13,7 @@ export default function Home({products}) {
       {/* <h1>Hello PAPA Fam</h1> */}
       <Header />
 
-      <main className="max-w-10xl mx-auto">
+      <main className="max-w-screen-2xl mx-auto">
         
         {/* Banner */}
         <Banner />
