@@ -15,6 +15,12 @@ function checkout() {
     const items = useSelector(selectItems)
     const total = useSelector(selectTotal)
     const createCheckoutSession = async () => {
+        alert("## USE THE FOLLOWING CARD DETAILS FOR DEMO PAYMENT: \n \
+        Card Number: 4242 4242 4242 \n \
+        Exp Date: 04/24 \n \
+        CVV: 424 \n \
+        \
+        ");
         const stripe = await stripePromise;
 
         // Call backend to create checkout session
